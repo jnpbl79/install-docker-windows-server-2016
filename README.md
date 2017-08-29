@@ -1,27 +1,5 @@
 # Installing Docker on Windows Server 2016
 
-Start PowerShell
-```
-PS> Install-WindowsFeature Containers
-```
-Restart the server
-```
-PS> Restart-Computer -Force
-```
-After server restarts
-```
-PS> Install-PackageProvider ContainerImage -Force
-```
-See the list of operating system images that are available:
-```
-PS> Find-ContainerImage
-```
-Install the windows server core base os image
-```
-PS> Install-ContainerImage -Name WindowsServerCore
-```
-## Install Docker
-
 First, install the Docker-Microsoft PacheManagement Provider from the PowerShell Gallery
 ```
 PS> Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
