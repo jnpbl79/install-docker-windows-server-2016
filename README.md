@@ -21,3 +21,10 @@ Make sure to include to correct docker-compose version
 ```
 PS> Invoke-WebRequest https://github.com/docker/compose/releases/download/1.12.0/docker-compose-Windows-x86_64.exe -UseBasicParsing -OutFile $env:ProgramFiles\docker\docker-compose.exe
 ```
+
+## Uninistall
+
+```
+PS> Uninstall-Package Docker -ProviderName DockerMsftProvider
+PS> Uninstall-Module -Name DockerMsftProvider
+```
